@@ -14,24 +14,57 @@ $(document).ready(function(){
             logger.innerHTML += message + '<br />';
         }
     }
-})(); //Show console.log in div
+})(); //Show console.log in div "log"
 
-	for (var i = 1; i < 101; i++) {
+
+
+
+
+    var choice = prompt("Pick a number, any number");
+    choice = +choice;
+    var numberChoice = parseInt(choice) + "<br>";
+        console.log(numberChoice); 
+
+    function function_name(argument) {
+        console.log(argument);
+        for (var i = 1; i < argument; i++) {
+       
+            if (i % 5 + i % 3 === 0) {
+                console.log("fizzbuzz");
+            }
+
+            else if (i % 5 === 0) {
+                console.log("buzz");
+            }
+
+            else if (i % 3 === 0) {
+                console.log("fizz");
+            }
+
+            else {
+            console.log(i);
+            }
+        }   
+    }
+        function_name(choice);
+
+
+// 	for (var i = 1; i < 101; i++) {
    
-   	if (i % 5 + i % 3 === 0) {
-		console.log("fizzbuzz")
-	}
+//    	if (i % 5 + i % 3 === 0) {
+// 		console.log("fizzbuzz")
+// 	}
 
-	else if (i % 5 === 0) {
-		console.log("buzz")
-	}
+// 	else if (i % 5 === 0) {
+// 		console.log("buzz")
+// 	}
 
-	else if (i % 3 === 0) {
-		console.log("fizz");
-	}
+// 	else if (i % 3 === 0) {
+// 		console.log("fizz");
+// 	}
 
-	else {
-	console.log(i);
-}
-}
+// 	else {
+// 	console.log(i);
+// }
+// }
 });
